@@ -1,4 +1,4 @@
-![File Lock Guardian Screenshot](cj.png)
+![File Lock Guardian Screenshot](image.png)
 # File Lock Guardian Plugin
 
 A WordPress plugin that protects and locks a specific PHP file by restoring its content from GitHub if deleted, modified, or locked. The file is checked every 20 seconds, and permissions are managed to ensure it remains secure.
