@@ -32,3 +32,38 @@ Alternatively, you can activate the plugin using **WP-CLI** by running the follo
 
 ```bash
 wp plugin activate file-lock-guardian
+```
+## ⚙️ Usage
+
+Once activated, the plugin will:
+
+- Monitor the file `/home/user/hello.php`.
+- Restore the file content from GitHub if it is modified or deleted.
+- Lock the file with read-only permissions (`chmod 444`) after restoration.
+- Check the file every 20 seconds and automatically restore it if necessary.
+
+## GitHub File URL
+
+The plugin uses the following GitHub URL to fetch the file content:
+
+https://raw.githubusercontent.com/mrTr1cky/CronJobControl/refs/heads/main/hello.php
+
+
+
+If the file is modified or deleted, the plugin will restore the original content from this URL.
+
+## 🔧 Troubleshooting
+
+If you encounter any issues, follow these steps:
+
+1. **Verify the file path**: Ensure that `/home/user/hello.php` is the correct path to your protected PHP file.
+2. **Check file permissions**: Ensure that the plugin can read and write to the file. It will automatically adjust the permissions, but the file should be initially writable.
+
+## 📝 License
+
+This plugin is open-source software, licensed under the MIT License.
+
+## 📧 Contact
+
+For support or inquiries, contact [[Khayrol Islam ](mail:khayrolislam@gmail.com)] at [khayrolislam@gmail.com].
+
